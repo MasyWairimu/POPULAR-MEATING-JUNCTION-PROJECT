@@ -1,0 +1,50 @@
+*{
+    border: none;
+    outline: none;
+}
+
+body{
+    background: rgb(24, 23, 23);
+    color: rgb(221, 195, 195);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    background: rgb(226, 31, 31);
+    color: rgb(238, 227, 227);
+    width: 120px;
+    height: 28px;
+    padding: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+@media screen and (min-width:600px) {
+    *{
+        margin: 10px;
+    }
+
+    button{
+        height: 40px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    button:hover{
+        transform: scale(0.8);
+    }
+}
+
+p{
+    font-size: 15px;
+}
