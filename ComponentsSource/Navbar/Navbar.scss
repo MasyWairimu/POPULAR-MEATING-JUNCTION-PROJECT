@@ -1,0 +1,167 @@
+.navBar{
+    width: 100%;
+    height: 70px;
+
+    .navContainer{
+        width: 100%;
+        display: flex;
+        box-shadow: 0 2px 4px rgba(168, 188, 209, 0.904);
+        justify-content: space-between;
+        border-radius: 15px;
+        height: 90%;
+
+
+        .title{
+            position: relative;
+            display: flex;
+            padding: 2px 5px;
+            align-items: center;
+
+            h2{
+                font-size: 1.1rem;
+                color: rgb(245, 227, 227);
+                margin-left: 5px;
+                //margin-right: 5px;
+            }
+
+            .navLogo{
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                margin-left: 3px;
+            }
+    }
+
+    .iconLogo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon{
+            align-items: center;
+            font-size: 25px;
+            margin-right: 5px;
+            position: relative;
+            right: 5px;
+            cursor: pointer;
+    
+            &:hover{
+                color: rgb(226, 31, 31);
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .navMenu{
+        position: absolute;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        top: 5rem;
+        right: 5rem;
+        z-index: 100;
+
+
+        .navList{
+            padding: 1rem;
+            background: rgb(63, 61, 61);
+            width: 150px;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow:2px 2px 4px rgba(168, 188, 209, 0.904);
+
+            .navLink{
+                margin-bottom: 10px;
+                padding: 5px;
+                font-size: 20px;
+                a{
+                    color: rgb(224, 215, 215);
+
+                    &:hover{
+                        font-size: 1.2rem;
+                        color: rgb(226, 31, 31);
+                    }
+                }
+
+            }
+
+            .icon{
+                position: absolute;
+                top: 1.6rem;
+                right: 10px;
+                cursor: pointer;
+                font-size: 20px;
+
+                &:hover{
+                    color: rgb(226, 31, 31);
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .navList{
+                .icon{
+                    right: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .activeNavbar{
+        display: flex;
+    }
+
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .navBar{
+        .navContainer{
+            height: 65px;
+
+            .title{
+                h2{
+                    font-size: 18px;
+                }
+    
+                .navLogo{
+                    font-size: 20px;
+                    margin-left: 0;
+                }
+                
+            }
+
+            .iconLogo{
+                .icon{
+                    font-size: 30px;
+                }
+            }
+
+            .navMenu{
+                top: 6.5rem;
+                height: 55vh;
+                width: 200px;
+
+                .navList{
+                    padding: 5px;
+                    height: max-content;
+
+                    .navLink{
+                        padding: 2px;
+                        font-size: 25px;
+                    }
+
+                    .icon{
+                        top: -0.6rem;
+                        right: 20px;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}

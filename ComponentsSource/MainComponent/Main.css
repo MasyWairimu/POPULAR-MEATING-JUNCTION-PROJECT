@@ -1,0 +1,127 @@
+.main {
+  width: 100%;
+  margin-top: 30px;
+}
+.main .productsContainer {
+  width: 90%;
+  margin: auto;
+}
+.main .productsContainer .prodDescription h3 {
+  font-size: 20px;
+  border-bottom: 1px solid rgb(221, 195, 195);
+}
+.main .productsContainer .prodDescription .description {
+  font-size: 15px;
+}
+.main .productsContainer .allProducts .ourProducts {
+  font-size: 20px;
+  border-bottom: 1px solid rgb(221, 195, 195);
+  margin: auto;
+}
+.main .productsContainer .allProducts .productList {
+  width: 100%;
+}
+.main .productsContainer .allProducts .productList li {
+  margin-bottom: 20px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 4px rgba(168, 188, 209, 0.904);
+  background: rgb(46, 45, 45);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.main .productsContainer .allProducts .productList li .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .productsContainer .allProducts .productList li .title h3 {
+  font-size: 25px;
+  color: rgb(226, 31, 31);
+  background: black;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10px;
+}
+.main .productsContainer .allProducts .productList li .title img {
+  width: 80%;
+  height: 30vh;
+  display: flex;
+  border-radius: 15px;
+}
+.main .productsContainer .allProducts .productList li p {
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+.main .productsContainer .allProducts .productList li .tagsContainer {
+  display: grid;
+  margin-left: 10px;
+  padding-bottom: 20px;
+}
+.main .productsContainer .allProducts .productList li .tagsContainer .recipe {
+  height: 30px;
+}
+.main .productsContainer .allProducts .productList li .tagsContainer .priceTag {
+  margin-bottom: 10px;
+}
+.main .productsContainer .allProducts .productList li .tagsContainer .priceTag .price {
+  display: flex;
+  align-items: center;
+  background: black;
+  padding-left: 5px;
+  width: 60%;
+  margin: 10px;
+  margin-left: 0;
+  border-radius: 40px;
+}
+.main .productsContainer .allProducts .productList li .tagsContainer .priceTag button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 5px;
+}
+.main .productsContainer .aboutUs h3 {
+  font-size: 17px;
+  border-bottom: 1px solid white;
+}
+.main .productsContainer .aboutUs p {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .main .productsContainer .allProducts {
+    margin-top: 30px;
+  }
+  .main .productsContainer .allProducts .productList {
+    width: 80%;
+    margin: auto;
+  }
+  .main .productsContainer .allProducts .productList li {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main .productsContainer .allProducts .productList li .title img {
+    height: 45vh;
+    width: 55%;
+  }
+  .main .productsContainer .allProducts .productList li .tagsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .productsContainer .allProducts .productList li .tagsContainer .priceTag {
+    display: flex;
+    align-items: center;
+  }
+  .main .productsContainer .allProducts .productList li .tagsContainer .recipe {
+    margin-bottom: 30px;
+  }
+}
+/*# sourceMappingURL=Main.css.map */

@@ -1,0 +1,152 @@
+.bookingPage {
+  box-sizing: border-box;
+}
+.bookingPage .priceCard {
+  width: 90%;
+  margin: auto;
+}
+.bookingPage .priceCard .head {
+  border: 1px solid white;
+  box-shadow: 0 2px 4px rgba(168, 188, 209, 0.904);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.bookingPage .priceCard .head h1 {
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: rgb(226, 31, 31);
+}
+.bookingPage .priceCard .head .iconContainer .icon {
+  font-size: 15px;
+}
+.bookingPage .priceCard .head .iconContainer:hover {
+  background: rgb(59, 56, 56);
+  border-radius: 30%;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  padding-left: 7px;
+  padding-top: 3px;
+}
+.bookingPage .priceCard .priceContainer {
+  border: 1px solid white;
+  border-radius: 20px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 80%;
+  margin: auto;
+  display: none;
+}
+.bookingPage .priceCard .priceContainer .row {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid white;
+}
+.bookingPage .priceCard .priceContainer .last {
+  border-bottom: 0;
+}
+.bookingPage .priceCard .activeCard {
+  display: grid;
+}
+.bookingPage .delivery {
+  margin-top: 30px !important;
+  width: 90%;
+  margin: auto;
+  border: 1px solid white;
+  box-shadow: 0 2px 4px rgba(168, 188, 209, 0.904);
+  border-radius: 30px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 20px;
+}
+.bookingPage .delivery .head {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.bookingPage .delivery .head h3 {
+  font-size: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: rgb(226, 31, 31);
+}
+.bookingPage .delivery .head .iconContainer {
+  cursor: pointer;
+}
+.bookingPage .delivery .head .iconContainer .icon {
+  font-size: 15px;
+  margin-top: 5px;
+}
+.bookingPage .delivery .head .iconContainer:hover {
+  background: rgb(59, 56, 56);
+  border-radius: 30%;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  padding-left: 7px;
+  padding-top: 3px;
+}
+.bookingPage .delivery .contactContainer {
+  display: none;
+  width: 90%;
+  margin: auto;
+  padding-left: 10px;
+  border-radius: 20px;
+}
+.bookingPage .delivery .activeContact {
+  display: grid;
+}
+
+@media screen and (min-width: 600px) {
+  .bookingPage {
+    width: 90%;
+    margin: auto;
+  }
+  .bookingPage .priceCard {
+    width: 80%;
+    margin: auto;
+  }
+  .bookingPage .priceCard .head .iconContainer .icon {
+    font-size: 17px;
+  }
+  .bookingPage .priceCard .head .iconContainer:hover {
+    background: rgb(59, 56, 56);
+    border-radius: 30%;
+    font-size: 20px;
+    padding: 0;
+  }
+  .bookingPage .delivery {
+    width: 60%;
+    margin: auto;
+  }
+  .bookingPage .delivery .head {
+    padding-right: 20px;
+  }
+  .bookingPage .delivery .head .iconContainer .icon {
+    font-size: 17px;
+  }
+  .bookingPage .delivery .head .iconContainer:hover {
+    background: rgb(59, 56, 56);
+    border-radius: 30%;
+    font-size: 20px;
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=Booking.css.map */

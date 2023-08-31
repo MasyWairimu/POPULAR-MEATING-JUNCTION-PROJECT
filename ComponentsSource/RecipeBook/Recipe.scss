@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.recipeContainer{
+   width: 100%;
+
+   .intro{
+        p{
+            font-size: 15px;
+        }
+
+        .closing{
+            //font-weight: 600;
+            color: rgb(226, 31, 31);
+            font-size: 16px;
+            text-decoration: wavy;
+        }
+   }
+
+//    .searchContainer{
+//         width: 100%;
+//         display: flex;
+//         justify-content: center;
+
+//         .input{
+//             flex: 1;
+//             border-radius: 30px;
+//             padding-left: 15px;
+//             background: rgb(224, 122, 122);
+//             color: rgb(14, 13, 13);
+//             font-size: 18px;
+//         }
+
+//         button{
+//             width: 30px;
+//             height: 30px;
+//             border-radius: 50%;
+//             margin-left: 3px;
+//             background: rgb(224, 122, 122);
+
+//             .icon{
+//                 font-size: 20px;
+//             }
+//         }
+//    }
+
+   .quickRecipeContainer{
+        border: 0.5px solid rgb(221, 195, 195);
+        margin: 10px;
+        border-radius: 30px;
+        padding: 10px;
+
+        .head{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2{
+                font-size: 20px;
+                color: rgb(226, 31, 31);
+            }
+
+            img{
+                border-radius: 20px;
+                width: 80%;
+                height: 50vh;
+            }
+        }
+
+        .ingredients{
+            margin: auto;
+            width: 60%;
+
+            h3{
+                text-decoration: underline;
+                text-align: center;
+            }
+
+            ol{
+                li{
+                    list-style: decimal;
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .recipe{
+            h3{
+                text-align: center;
+                text-decoration: underline;
+                font-size: 20px;
+                color: rgb(226, 31, 31);
+            }
+
+            h4{
+                text-align: center;
+                text-decoration: underline;
+                font-size: 18px;
+            }
+
+            ul{
+                li{
+                   list-style: decimal; 
+                   font-size: 15px;
+                }
+            }
+        }
+
+        .button{
+            width: 100%;
+            display: flex;
+            justify-items: center;
+            
+            button{
+                margin: auto;
+                justify-content: center;
+                font-size: 17px;
+            }
+        }
+   }
+ }

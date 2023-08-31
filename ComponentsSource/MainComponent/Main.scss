@@ -1,0 +1,157 @@
+.main{
+    width: 100%;
+    margin-top: 30px;
+
+    .productsContainer{
+        width: 90%;
+        margin: auto;
+
+        .prodDescription{
+            h3{
+                font-size: 20px;
+                border-bottom: 1px solid rgb(221, 195, 195);
+            }
+
+            .description{
+                font-size: 15px;
+            }
+        }
+
+        .allProducts{
+            .ourProducts{
+                font-size: 20px;
+                border-bottom: 1px solid rgb(221, 195, 195);
+                margin: auto;
+            }
+
+            .productList{
+                width: 100%;
+
+                li{
+                    margin-bottom: 20px;
+                    border-radius: 30px;
+                    box-shadow:2px 2px 4px rgba(168, 188, 209, 0.904);
+                    background: rgb(46, 45, 45);
+                    height: max-content;
+
+                    .title{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        h3{
+                            font-size: 25px;
+                            color: rgb(226, 31, 31);
+                            background: black;
+                            width: max-content;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            padding-top: 3px;
+                            padding-bottom: 3px;
+                            border-radius: 10px;
+                           // text-indent: -3cm;
+                            
+                        }
+    
+                        img{
+                            width: 80%;
+                            height: 30vh;
+                            display: flex;
+                            border-radius: 15px;
+                        }
+                    }
+
+                    p{
+                        margin-left: 10px;
+                        margin-right: 5px;
+                        font-size: 15px;
+                    }
+
+                    .tagsContainer{
+                        display: grid;
+                        margin-left: 10px;
+                        padding-bottom: 20px;
+
+                        .recipe{
+                            height: 30px;
+                        }
+
+                        .priceTag{
+                            margin-bottom: 10px;
+                            .price{
+                                display: flex;
+                                align-items: center;
+                                background: black;
+                                padding-left: 5px;
+                                width: 60%;
+                                margin: 10px;
+                                margin-left:0;
+                                border-radius: 40px;
+                            }
+
+                            button{
+                                width: max-content;
+                                padding: 5px;
+                            }
+                        }
+                    }
+                        
+                }
+            }
+
+
+        }
+
+        .aboutUs{
+            h3{
+                font-size: 17px;
+                border-bottom: 1px solid white;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .main{
+        .productsContainer{
+            .allProducts{
+                margin-top: 30px;
+
+                .productList{
+                    width: 80%;
+                    margin: auto;
+
+                    li{
+                        height: max-content;
+
+                        .title{
+                            img{
+                                height: 45vh;
+                                width: 55%;
+                            }
+                        }
+
+                        .tagsContainer{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+
+                                .priceTag{
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                                .recipe{
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
